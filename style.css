@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: black;
+
+}
+#plansza {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(border.png);
+    background-size: cover;
+    border-radius: 5px;
+    
+    
+}
+
+#klocek {
+    width: 62px;
+    height: 20px;
+    background-image: url(player.png);
+    position: absolute;
+    left: 425px;
+    top: 550px;
+}
+
+#restart {
+    position: absolute;
+    top: 50%;
+    left: calc((100% - 400px)/2 - 180px) ;
+    transform: translateY(-50%);
+    display: block;
+    padding: 5px 10px;
+    font-size: 1.75rem;
+    color: antiquewhite;
+    background-color: #333232;
+    border-radius: 5px;
+    border: 1px solid #111;
+    cursor: pointer;
+}
+
+#score-board {
+    position: absolute;
+    top: 50%;
+    left: calc((100% - 400px)/2 + 490px) ;
+    transform: translateY(-50%);
+    display: block;
+    padding: 5px 10px;
+    font-size: 1.75rem;
+    color: antiquewhite;
+    background-color: #333232;
+    border-radius: 5px;
+    border: 1px solid #111;
+}
+
+#restart:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    color: antiquewhite;
+}
+
+#game-over {
+    display: none;
+}
+
+#game-over h1 {
+    font-size: 5rem;
+}
+
+#game-over p {
+    text-align: center;
+    font-size: 2.5rem; 
+    color: antiquewhite;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+span {
+    font-size: 2.75rem;
+    font-weight: bold;
+    color: aquamarine;
+}
